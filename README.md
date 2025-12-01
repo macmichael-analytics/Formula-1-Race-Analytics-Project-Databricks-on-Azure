@@ -12,7 +12,9 @@ End-to-end data engineering project built on Azure + Databricks to ingest Formul
 
 ## Architecture Overview
 
-![Architecture](/mnt/data/formula1-solution-architecture.png)
+
+<img src = "https://github.com/vedanthv/data-engineering-projects/blob/main/formula-1-analytics-engg/static/formula1-solution-architecture.png">
+
 High-level flow:
 
 1. **Extract** data from the Ergast API.
