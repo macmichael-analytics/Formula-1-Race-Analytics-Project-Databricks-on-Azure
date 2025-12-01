@@ -6,6 +6,32 @@
 
 <img src = "https://github.com/macmichael-analytics/Formula-1-Race-Analytics-Project-Databricks-on-Azure/blob/main/project-images/f1-car.jpg">
 
+## A Brief Introduction to Formula 1
+
+**Cars**: Formula 1 cars are cutting-edge, single-seat racing machines with advanced aerodynamics and powerful engines. They are designed for maximum speed and agility.
+
+**Races**: F1 races take place on a variety of tracks, including purpose-built circuits and temporary street circuits in cities around the world.
+
+**Teams**: Multiple teams, each with two drivers, compete in the championship. Prominent teams include Mercedes, Ferrari, Red Bull Racing, and McLaren.
+
+**Drivers**: F1 attracts some of the world's best racing talents, and drivers like Lewis Hamilton, Sebastian Vettel, and Max Verstappen have become household names.
+
+**Points and Championships**: Drivers and teams earn points based on their performance in each race. At the end of the season, the driver with the most points wins the Drivers' Championship, and the team with the most points wins the Constructors' Championship.
+
+## How does the Formula 1 Season Work
+
+A Formula 1 championship season refers to a specific year in which a series of Formula 1 races are held, and points are accumulated by drivers and teams to determine the champions in various categories. Here's an explanation of how a Formula 1 championship season works:
+
+**Race Calendar**: Each Formula 1 season typically consists of a calendar of races, known as Grand Prix events. These races are held at various locations around the world, ranging from traditional circuits to temporary street tracks.
+
+**Teams and Drivers**: Multiple teams participate in the championship, with each team fielding two drivers. These drivers compete throughout the season to earn points for themselves and their teams.
+
+**Points System**: Formula 1 uses a points system to determine the championship standings. The points are awarded to drivers based on their finishing positions in each race. The points system can vary slightly over the years, but a common system is to award points to the top 10 finishers, with the winner earning the most points (e.g., 25 points) and the 10th-place finisher earning the fewest (e.g., 1 point).
+
+**Drivers' Championship**: The primary focus of a Formula 1 season is the Drivers' Championship. Drivers accumulate points from each race throughout the season. The driver with the most points at the end of the season is crowned the Drivers' Champion and often receives the prestigious "World Champion" title.
+
+**Constructors' Championship**: In addition to the Drivers' Championship, there is also a Constructors' Championship. This championship considers the combined points earned by both drivers of each team. The team with the most points at the end of the season wins the Constructors' Championship.
+
 
 ## Architecture Overview
 
@@ -270,38 +296,6 @@ df = df.withColumn('ingest_ts', current_timestamp()) \
 ---
 
 
-
-
-
-If you want, I can also add the actual Databricks notebook `.py` files for the `notebooks/` folder and a sample `adf_pipeline.json` in the `pipelines/` folder. Let me know and I will generate them in this repo.
-
-## A Brief Introduction to Formula 1
-
-**Cars**: Formula 1 cars are cutting-edge, single-seat racing machines with advanced aerodynamics and powerful engines. They are designed for maximum speed and agility.
-
-**Races**: F1 races take place on a variety of tracks, including purpose-built circuits and temporary street circuits in cities around the world.
-
-**Teams**: Multiple teams, each with two drivers, compete in the championship. Prominent teams include Mercedes, Ferrari, Red Bull Racing, and McLaren.
-
-**Drivers**: F1 attracts some of the world's best racing talents, and drivers like Lewis Hamilton, Sebastian Vettel, and Max Verstappen have become household names.
-
-**Points and Championships**: Drivers and teams earn points based on their performance in each race. At the end of the season, the driver with the most points wins the Drivers' Championship, and the team with the most points wins the Constructors' Championship.
-
-## How does the Formula 1 Season Work
-
-A Formula 1 championship season refers to a specific year in which a series of Formula 1 races are held, and points are accumulated by drivers and teams to determine the champions in various categories. Here's an explanation of how a Formula 1 championship season works:
-
-**Race Calendar**: Each Formula 1 season typically consists of a calendar of races, known as Grand Prix events. These races are held at various locations around the world, ranging from traditional circuits to temporary street tracks.
-
-**Teams and Drivers**: Multiple teams participate in the championship, with each team fielding two drivers. These drivers compete throughout the season to earn points for themselves and their teams.
-
-**Points System**: Formula 1 uses a points system to determine the championship standings. The points are awarded to drivers based on their finishing positions in each race. The points system can vary slightly over the years, but a common system is to award points to the top 10 finishers, with the winner earning the most points (e.g., 25 points) and the 10th-place finisher earning the fewest (e.g., 1 point).
-
-**Drivers' Championship**: The primary focus of a Formula 1 season is the Drivers' Championship. Drivers accumulate points from each race throughout the season. The driver with the most points at the end of the season is crowned the Drivers' Champion and often receives the prestigious "World Champion" title.
-
-**Constructors' Championship**: In addition to the Drivers' Championship, there is also a Constructors' Championship. This championship considers the combined points earned by both drivers of each team. The team with the most points at the end of the season wins the Constructors' Championship.
-
-
 ### Data Transformation
 
 - Join key information required to report anything.
@@ -326,18 +320,14 @@ A Formula 1 championship season refers to a specific year in which a series of F
 
 - Set up Alerts on Failures.
 
-## Solution Architecture
-
-<img src = "https://github.com/vedanthv/data-engineering-projects/blob/main/formula-1-analytics-engg/static/formula1-solution-architecture.png">
-
 
 ### Visualizations
 
 #### Dominant Drivers
 
-![image](https://github.com/vedanthv/data-engineering-portfolio/assets/44313631/aef0dacf-3cd8-494d-b1d7-e2249a5f7652)
+<img src = "https://github.com/macmichael-analytics/Formula-1-Race-Analytics-Project-Databricks-on-Azure/blob/main/project-images/dominant_drivers.png">
 
 ### Dominant Teams
 
-![image](https://github.com/vedanthv/data-engineering-portfolio/assets/44313631/3995a206-950d-470b-a525-8f1845ed7cca)
+<img src = "https://github.com/macmichael-analytics/Formula-1-Race-Analytics-Project-Databricks-on-Azure/blob/main/project-images/dominant_teams.png">
 
