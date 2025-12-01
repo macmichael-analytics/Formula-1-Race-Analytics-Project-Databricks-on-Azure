@@ -3,7 +3,7 @@
 End-to-end data engineering project built on Azure + Databricks to ingest Formula 1 race data from the Ergast API, store it in Parquet, and provide SQL analysis and dashboards (Dominant Drivers, Dominant Teams) and Databricks Dashboards. This repository contains notebooks, pipeline definitions, sample code, and instructions to reproduce the solution.
 
 ![charles-leclerc-ferrari-sf-23-](https://github.com/vedanthv/data-engineering-projects/assets/44313631/4e8c3e14-0652-4ebc-b418-3e906526c6e4)
-<img src = "https://github.com/macmichael-analytics/blob/main/Formula-1-Race-Analytics-Project-Databricks-on-Azure/blob/main/project-images/f1-car.jpg">
+<img src = "https://github.com/macmichael-analytics/Formula-1-Race-Analytics-Project-Databricks-on-Azure/blob/main/project-images/f1-car.jpg">
 
 # Formula 1 Race Analytics — Databricks on Azure
 
