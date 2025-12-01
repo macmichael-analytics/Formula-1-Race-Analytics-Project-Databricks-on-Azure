@@ -2,7 +2,6 @@
 
 End-to-end data engineering project built on Azure + Databricks to ingest Formula 1 race data from the Ergast API, store it in Parquet, and provide SQL analysis and dashboards (Dominant Drivers, Dominant Teams) and Databricks Dashboards. This repository contains notebooks, pipeline definitions, sample code, and instructions to reproduce the solution.
 
-![charles-leclerc-ferrari-sf-23-](https://github.com/vedanthv/data-engineering-projects/assets/44313631/4e8c3e14-0652-4ebc-b418-3e906526c6e4)
 <img src = "https://github.com/macmichael-analytics/Formula-1-Race-Analytics-Project-Databricks-on-Azure/blob/main/project-images/f1-car.jpg">
 
 # Formula 1 Race Analytics — Databricks on Azure
@@ -14,7 +13,7 @@ End-to-end data engineering project built on Azure + Databricks to ingest Formul
 ## Architecture Overview
 
 
-<img src = "https://github.com/vedanthv/data-engineering-projects/blob/main/formula-1-analytics-engg/static/formula1-solution-architecture.png">
+<img src = "https://github.com/macmichael-analytics/Formula-1-Race-Analytics-Project-Databricks-on-Azure/blob/main/project-images/formula1-solution-architecture.png">
 
 High-level flow:
 
@@ -273,27 +272,9 @@ df = df.withColumn('ingest_ts', current_timestamp()) \
 
 ---
 
-## Notes & Recommendations
 
-* **Delta Lake**: strongly recommended for production to simplify incremental upserts and provide ACID guarantees.
-* **Testing**: include unit tests for parsing logic and integration tests for end-to-end ingestion.
-* **Monitoring**: add logging, Databricks job alerts, and ADF monitoring for failures.
 
----
 
-## License
-
-MIT
-
----
-
-## Next steps / Enhancements
-
-* Add Power BI sample report pointing to Databricks SQL Warehouse.
-* Add more advanced analyses (driver form, head-to-head, tyre strategy effects).
-* Add streaming ingestion for live telemetry (if additional source available).
-
----
 
 If you want, I can also add the actual Databricks notebook `.py` files for the `notebooks/` folder and a sample `adf_pipeline.json` in the `pipelines/` folder. Let me know and I will generate them in this repo.
 
@@ -323,21 +304,6 @@ A Formula 1 championship season refers to a specific year in which a series of F
 
 **Constructors' Championship**: In addition to the Drivers' Championship, there is also a Constructors' Championship. This championship considers the combined points earned by both drivers of each team. The team with the most points at the end of the season wins the Constructors' Championship.
 
-## Project Requirements
-
-### Data Ingestion 
-
-- Extract Data from the Ergast API.
-
-- Ingested Data must have the correct schema applied.
-
-- Ingested Data must have the audit columns.
-
-- Ingested data must be in the Parquet Format.
-
-- Analyse the ingested data via SQL
-
-- Ingested Data must be able to handle incremental load.
 
 ### Data Transformation
 
